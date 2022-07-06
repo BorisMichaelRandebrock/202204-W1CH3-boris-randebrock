@@ -1,57 +1,122 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
-* {
-  box-sizing: border-box;
+
+:root {
+  --txt-black: #000;
+  --txt-white: #fff;
+  --txt-orange: #ec6435;
+  --bg-orange: #ec6435;
+  --bg-white: #fff;
 }
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
 body {
   font-family: "Nunito", sans-serif;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  /* padding: 0 8rem; */
+  padding-right: 25px;
+  padding-left: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar__items {
+  display: flex;
+  align-items: center;
+}
+.navbar__items li {
+  margin-left: 2.5rem;
+  display: none;
+}
+.navbar__items a {
+  color: var(--txt-black);
+  font-weight: 600;
+}
+
+.navbar__item--arrow::after {
+  content: "\25BE";
+  padding-left: 4px;
+}
+
+.hamburger {
+  width: 0.5rem;
+  display: block;
+  background-color: var(--bg-white);
+  border: none;
+  cursor: pointer;
+  height: 25px;
+  /* display: none; */
+}
+
+.topHeaderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.headers {
+  height: fit-content;
+}
+
+.headers {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 0;
+  height: 75px;
+  align-items: center;
 }
 general-Container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.topHeaderContainer {
-  display: flex;
-  flex-direction: column;
 
-  /* justify-content: space-between; */
-}
 /* .buttonSection {
   flex-direction: column;
   justify-content: flex-end;
 } */
-.headers {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 0%;
-  margin-top: 0%;
-  margin-bottom: 0;
-  height: 75px;
-}
 
 h1 {
+  margin-top: 15px;
   font-size: 1rem;
-  color: rgb(212, 109, 49);
+
+  color: var(--txt-orange);
   max-width: max-content;
 }
 h2 {
-  font-size: 3.5rem;
-  padding-top: 0%;
-  height: 100px;
-  margin-bottom: 100px;
-  padding-bottom: 100px;
+  font-size: 2rem;
+  margin: 11px;
+  /* height: 100px;
+  margin-bottom: 10px;
+  padding-bottom: 1px; */
 }
 .img {
   border-radius: 55px;
-  width: 350px;
+  padding: 25px;
 }
-button {
-  background-color: rgb(255, 95, 85);
+#submit {
+  background-color: var(--bg-orange);
   color: white;
   font-weight: 800;
   border-radius: 2px 20px 20px 20px;
   border-style: none;
-  /* border-collapse: collapse; */
   width: 100px;
-  /* height: 55px; */
+  height: 40px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+
+  color: rgb(212, 109, 49);
+  max-width: max-content;
 }
