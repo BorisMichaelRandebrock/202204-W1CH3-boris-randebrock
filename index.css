@@ -7,6 +7,11 @@
   --bg-orange: #ec6435;
   --bg-white: #fff;
 }
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
 
 body {
   font-family: "Nunito", sans-serif;
@@ -54,10 +59,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-* {
-  margin: 0;
-  padding: 0;
-}
 
 section.headers {
   height: fit-content;
@@ -71,10 +72,21 @@ section.headers {
   height: 75px;
   align-items: center;
 }
+general-Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* .buttonSection {
+  flex-direction: column;
+  justify-content: flex-end;
+} */
 
 h1 {
   margin-top: 15px;
   font-size: 1rem;
+
   color: var(--txt-orange);
   max-width: max-content;
 }
@@ -104,4 +116,7 @@ h2 {
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
+
+  color: rgb(212, 109, 49);
+  max-width: max-content;
 }
