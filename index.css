@@ -116,7 +116,7 @@ h2 {
 }
 
 @media (min-width: 600px) {
-  .topHeaderContainer {
+  /* .topHeaderContainer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -166,7 +166,7 @@ h2 {
   .navbar__item--arrow::after {
     content: "\25BE";
     padding-left: 4px;
-  }
+  } */
 
   /* .buttonSection {
   flex-direction: column;
