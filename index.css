@@ -15,7 +15,7 @@
 body {
   font-family: "Nunito", sans-serif;
 }
-.navbar {
+/* .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,7 +40,7 @@ body {
 .navbar__item--arrow::after {
   content: "\25BE";
   padding-left: 4px;
-}
+} */
 
 .hamburger {
   width: 0.5rem;
@@ -75,11 +75,6 @@ general-Container {
   justify-content: center;
 }
 
-/* .buttonSection {
-  flex-direction: column;
-  justify-content: flex-end;
-} */
-
 h1 {
   margin-top: 15px;
   font-size: 1rem;
@@ -103,6 +98,13 @@ h2 {
   border-style: none;
   width: 100px;
   height: 40px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#submit:hover {
+  background-color: transparent;
+  border: 2px solid var(--bg-orange);
+  color: var(--txt-black);
 }
 
 .container {
@@ -148,19 +150,15 @@ h2 {
     flex-direction: row;
     justify-content: center;
     color: var(--txt-orange);
-    /* width: 1; */
     align-items: center;
     margin: 0;
   }
-  /*
   .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 80px;
-    padding: 0 8rem;
-    padding-right: 25px;
-    padding-left: 15px;
+    padding: 0 1.5rem;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
   .navbar__items {
@@ -168,35 +166,52 @@ h2 {
     align-items: center;
   }
   .navbar__items li {
+    list-style: none;
     margin-left: 2.5rem;
   }
   .navbar__items a {
     color: var(--txt-black);
     font-weight: 600;
   }
-
-  .navbar__item--arrow::after {
+  .navbar__item--arrow:after {
     content: "\25BE";
     padding-left: 4px;
-  } */
+  }
 
-  /* .buttonSection {
-  flex-direction: column;
-  justify-content: flex-end;
-} */
+  .button--nav {
+    background-color: var(--bg-orange);
+    color: white;
+    font-weight: 800;
+    border-radius: 2px 20px 20px 20px;
+    border-style: none;
+    width: 90px;
+    height: 30px;
+    color: var(--txt-black);
+    background-color: transparent;
+    border: 1px solid var(--txt-orange);
+    text-transform: uppercase;
+    transition: 0.2s;
+  }
+
+  .button--nav:hover {
+    background-color: var(--txt-orange);
+    color: white;
+    cursor: pointer;
+  }
   .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    color: var(--txt-orange);
+
     width: 1;
     align-items: center;
   }
   .img {
     border-radius: 55px;
     /* padding: 25px; */
-    size: 1;
+    flex: 1;
+    max-width: 300px;
   }
   .hamburger {
     display: none;
